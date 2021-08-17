@@ -1,15 +1,31 @@
 @font-face {
-  font-family: "Roboto Slab";
-  src: url("../fonts/RobotoSlabRegular.woff2") format("woff2"), url("../fonts/RobotoSlabRegular.woff") format("woff");
+  font-family: "Consolas";
+  src: url("../fonts/ConsolasRegular.woff2") format("woff2"), url("../fonts/ConsolasRegular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto Slab";
-  src: url("../fonts/RobotoSlabBold.woff2") format("woff2"), url("../fonts/RobotoSlabBold.woff") format("woff");
+  font-family: "Consolas";
+  src: url("../fonts/ConsolasBold.woff2") format("woff2"), url("../fonts/ConsolasBold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/MerriweatherRegular.woff2") format("woff2"), url("../fonts/MerriweatherRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSansItalic.woff2") format("woff2"), url("../fonts/OpenSansItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
   font-display: swap;
 }

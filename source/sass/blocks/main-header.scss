@@ -1,6 +1,30 @@
 .main-header {
-  padding-top: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-bottom: 30px;
+}
+
+.main-header__title {
+  position: relative;
+  text-align: center;
+  font-family: $side-text;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: $blue;
+
+  margin-top: 80px;
+  margin-bottom: 64px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 143px;
+    height: 1px;
+    background-color: $border-grey;
+    top: 50%;
+  }
+
+  &:after {
+    right: 0;
+  }
 }

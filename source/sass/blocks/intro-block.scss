@@ -1,0 +1,40 @@
+.intro-block {
+  position: relative;
+  border-bottom: 0.5px solid $border-grey;
+  padding-bottom: 50px;
+  margin-bottom: 55px ;
+}
+
+.intro-block__date {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  min-height: 100px;
+  background-color: $white;
+  opacity: 0.9;
+}
+
+.intro-block__date--text {
+  width: 76px;
+  text-align: center;
+
+  font-family: $merriweather;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 25px;
+}
+
+.intro-block__image {
+  margin-bottom: 20px;
+}
+
+.intro-block__text {
+  font-family: $arial;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+}

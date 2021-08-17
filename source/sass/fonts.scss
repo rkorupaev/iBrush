@@ -29,3 +29,11 @@
   font-weight: 400;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/ArialMTRegular.woff2") format("woff2"), url("../fonts/ArialMTRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

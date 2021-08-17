@@ -51,8 +51,6 @@ a {
   width: 100%;
   max-width: $mobile-width;
   margin: 0 auto;
-
-  //background-color: $main-background;
 }
 
 .visually-hidden {
@@ -61,17 +59,4 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-
-::-webkit-scrollbar {
-  width: 3px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $main-red;
-  border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  opacity: 0.7;
 }

@@ -37,7 +37,6 @@ a {
 .body-container {
   display: flex;
   flex-direction: column;
-  max-width: 1024px;
 
   align-items: center;
 
@@ -47,6 +46,7 @@ a {
 .container {
   box-sizing: border-box;
   width: 100%;
+  max-width: 738px;
 }
 
 .visually-hidden {

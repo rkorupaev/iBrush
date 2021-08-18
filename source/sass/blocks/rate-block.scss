@@ -1,9 +1,11 @@
 .rate-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: $side-background;
 }
 
 .rate-block__wrapper {
-  margin: 0 143px;
   padding: 40px 0;
 }
 

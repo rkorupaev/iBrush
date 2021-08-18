@@ -1,6 +1,6 @@
 import {swiper} from "./swiper";
 
-// swiper('.swiper-container');
+swiper('.swiper-container');
 
 import Choices from "choices.js";
 

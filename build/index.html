@@ -19,14 +19,14 @@
   <header class="main-header container">
     <h1 class="main-header__title">Путь JavaScript</h1>
   </header>
-  <main class="main-body container">
-    <section class="main-body__intro-block intro-block">
+  <main class="main-body">
+    <section class="main-body__intro-block intro-block container">
       <h2 class="intro-block__title visually-hidden">Три основных направления</h2>
       <div class="intro-block__date"><p class="intro-block__date-text">12 <span>Апреля</span></p></div>
       <img class="intro-block__image" src="./img/books.png" alt="js books" width="738" height="300">
       <p class="intro-block__text">Можно выделить три основных направления для прогресса JavaScript </p>
     </section>
-    <section class="main-body__quote-block quote-block">
+    <section class="main-body__quote-block quote-block container">
       <h2 class="quote-block__title">Серверный JavaScript</h2>
       <div class="quote-block__text-wrapper">
         <p class="quote-block__text">Разработчики и клиенты часто неправильно понимают, что такое система. Они видят
@@ -43,7 +43,7 @@
         <a class="advertisement__image-link" href="#blabla.com"><img src="./img/banner-desktop.png" alt="advertisement photo" width="610" height="200"></a>
       </div>
     </section>
-    <section class="main-body__conclusion conclusion">
+    <section class="main-body__conclusion conclusion container">
       <h2 class="conclusion__title">Заключение</h2>
       <p class="conclusion__text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует
         лирический субъект.
@@ -82,6 +82,32 @@
           <textarea class="form__text-area input" id="review" cols="30" rows="10">Ваш отзыв</textarea>
           <button class="form__button" type="submit">Отправить</button>
         </form>
+      </div>
+    </section>
+    <section class="main-body__similar-posts similar-posts container">
+      <h2 class="similar-posts__title">Похожие посты</h2>
+      <div class="swiper-container similar-posts__slider">
+        <ul class="swiper-wrapper similar-posts__slider-wrapper">
+          <li class="swiper-slide similar-posts__slide">
+            <a class="similar-posts__slide-link" href="#">
+              <img class="similar-posts__slide-image" src="./img/react.png" alt="slider image">
+              <h3 class="similar-posts__slide-title">События жизненного цикла ReactJS</h3>
+            </a>
+          </li>
+          <li class="swiper-slide similar-posts__slide">
+            <a class="similar-posts__slide-link" href="#">
+              <img class="similar-posts__slide-image " src="./img/grid.png" alt="slider image">
+              <h3 class="similar-posts__slide-title">CSS Grids. Полное руководство</h3>
+            </a>
+          </li>
+          <li class="swiper-slide similar-posts__slide">
+            <a class="similar-posts__slide-link" href="#">
+              <img class="similar-posts__slide-image " src="./img/js.png" alt="slider image">
+              <h3 class="similar-posts__slide-title">Асинхронность в JavaScript</h3>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pagination similar-posts__pagination"></div>
       </div>
     </section>
   </main>

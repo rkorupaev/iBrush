@@ -5,20 +5,28 @@ SwiperCore.use([Navigation, Pagination]);
 
 export const swiper = (element) => {
   return new SwiperCore(element, {
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
+    slidesPerView: 3,
+    spaceBetween: 30,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+      },
+      // when window width is >= 640px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
     },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
   });
-}
+};

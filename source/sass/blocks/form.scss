@@ -1,0 +1,58 @@
+.form__select {
+  width: 226px;
+  padding: 0;
+  border-radius: 6px;
+  border: 2px solid $input-border;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $input-hover-border;
+  }
+}
+
+.form__select-inner {
+  box-sizing: border-box;
+  padding: 0 19px;
+  min-height: 50px;
+  display: flex;
+  padding-top: 7.5px;
+  align-items: center;
+  background-color: $white;
+}
+
+.choices__list {
+  box-sizing: border-box;
+}
+
+.choices__list--dropdown .choices__item {
+  padding: 10px 11px;
+  padding-left: 25px;
+  color: $main-black;
+}
+
+.form__select-item {
+  position: relative;
+  width: 188px;
+  color: $input-text;
+  opacity: 1;
+}
+
+.choices__list--dropdown .is-active {
+  margin-top: 10px;
+  border: none;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: $side-background;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 100%;
+    background-color: $blue;
+    top: 0;
+    left: 0;
+  }
+}

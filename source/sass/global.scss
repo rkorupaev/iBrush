@@ -56,3 +56,9 @@ a {
   height: 1px;
   margin: -1px;
 }
+
+@media (max-width: $mobile-width) {
+  .container {
+    max-width: 280px;
+  }
+}

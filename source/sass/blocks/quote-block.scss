@@ -32,3 +32,36 @@
 .quote-block__text-author {
   color: $author-grey;
 }
+
+@media (max-width: $mobile-width) {
+  .quote-block {
+    margin-bottom: 56px;
+  }
+
+  .quote-block__title {
+    margin-bottom: 20px;
+    font-size: 23px;
+    line-height: 36px;
+  }
+
+  .quote-block__text-wrapper {
+    padding-left: 58px;
+    padding-top: 5px;
+    background-image: url("../img/quotation-mark.png");
+    background-repeat: no-repeat;
+
+    font-family: $font-primary;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .quote-block__text {
+    margin-bottom: 40px;
+  }
+
+  .quote-block__text-author {
+    color: $author-grey;
+  }
+}

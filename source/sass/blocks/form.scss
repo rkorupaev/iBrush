@@ -1,3 +1,8 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__select {
   width: 226px;
   padding: 0;
@@ -32,7 +37,7 @@
 
 .form__select-item {
   position: relative;
-  width: 188px;
+  width: 184px;
   color: $input-text;
   opacity: 1;
 }
@@ -54,5 +59,36 @@
     background-color: $blue;
     top: 0;
     left: 0;
+  }
+}
+
+.form__text-area {
+  padding: 15px 19px;
+  height: 120px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.form__button {
+  background-color: $blue;
+  border: none;
+  border-radius: 2px;
+  color: $white;
+  padding: 14px;
+  width: 198px;
+  min-height: 16px;
+  outline: none;
+
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 16px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.4;
   }
 }

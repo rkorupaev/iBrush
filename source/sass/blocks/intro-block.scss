@@ -3,6 +3,20 @@
   border-bottom: 0.5px solid $border-grey;
   padding-bottom: 50px;
   margin-bottom: 55px;
+  overflow: hidden;
+}
+
+.intro-block__image-wrapper {
+  position: relative;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+
+
+.intro-block__image {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .intro-block__date {
@@ -38,10 +52,6 @@
   }
 }
 
-.intro-block__image {
-  margin-bottom: 20px;
-}
-
 .intro-block__text {
   font-family: $arial;
   font-style: italic;
@@ -65,7 +75,7 @@
     display: none;
   }
 
-  .intro-block__image {
+  .intro-block__image-wrapper {
     margin-bottom: 16px;
   }
 
@@ -79,6 +89,7 @@
 
   .intro-block__slider {
     display: block;
+    position: relative;
     width: 100%;
     height: 4px;
     background-color: $input-border;
@@ -86,6 +97,8 @@
   }
 
   .intro-block__slider-pin {
+    position: absolute;
+    left: 0;
     cursor: pointer;
     display: block;
     width: 70px;

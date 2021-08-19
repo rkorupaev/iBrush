@@ -9,14 +9,11 @@
 .intro-block__image-wrapper {
   position: relative;
   min-height: 300px;
-  margin-bottom: 20px;
 }
 
 
 .intro-block__image {
-  position: absolute;
-  left: 0;
-  top: 0;
+  margin-bottom: 20px;
 }
 
 .intro-block__date {
@@ -60,10 +57,6 @@
   color: $intro-black;
 }
 
-.intro-block__slider {
-  display: none;
-}
-
 @media (max-width: $mobile-width) {
   .intro-block {
     border-bottom: none;
@@ -76,7 +69,37 @@
   }
 
   .intro-block__image-wrapper {
-    margin-bottom: 16px;
+    overflow-x: auto;
+    min-height: 300px;
+
+    &::-webkit-scrollbar {
+      background-color: $input-border;
+      height: 4px;
+      border-radius: 15px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      cursor: pointer;
+      width: 70px;
+      height: 4px;
+      background-color: $blue;
+      border-radius: 15px;
+      transition-duration: 0.3s;
+
+
+      &:hover .intro-block__slider-inner-pin,
+      &:focus .intro-block__slider-inner-pin {
+        transform: scale(1.1);
+      }
+
+      &:active .intro-block__slider-inner-pin {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .intro-block__image {
+    margin-bottom: 13px;
   }
 
   .intro-block__text {
@@ -85,35 +108,5 @@
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 26px;
-  }
-
-  .intro-block__slider {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 4px;
-    background-color: $input-border;
-    border-radius: 15px;
-  }
-
-  .intro-block__slider-pin {
-    position: absolute;
-    left: 0;
-    cursor: pointer;
-    display: block;
-    width: 70px;
-    height: 4px;
-    background-color: $blue;
-    border-radius: 15px;
-    transition-duration: 0.3s;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.1);
-    }
-
-    &:active {
-      opacity: 0.5;
-    }
   }
 }

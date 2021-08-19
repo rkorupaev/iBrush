@@ -22,3 +22,14 @@
   }
 }
 
+@media (max-width: $mobile-width) {
+  .input--top-block {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -87,3 +87,22 @@
   display: flex;
   margin-bottom: 20px;
 }
+
+@media (max-width: $mobile-width) {
+  .rate-block__wrapper {
+    max-width: 280px;
+  }
+
+  .rate-block__title {
+    margin-bottom: 15px;
+  }
+
+  .rate-block__rating-area {
+    margin-bottom: 20px;
+  }
+
+  .rate-block__sub-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}

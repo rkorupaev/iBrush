@@ -64,12 +64,13 @@
 
 .form__text-area {
   padding: 15px 19px;
-  height: 120px;
+  height: 90px;
   resize: none;
   margin-bottom: 20px;
 }
 
 .form__button {
+  cursor: pointer;
   background-color: $blue;
   border: none;
   border-radius: 2px;
@@ -90,5 +91,25 @@
 
   &:active {
     opacity: 0.4;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .form__top-wrapper {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .form__select {
+    width: 100%;
+  }
+
+  .form__text-area {
+    margin-bottom: 10px;
+  }
+
+  .form__button {
+    width: 100%;
   }
 }

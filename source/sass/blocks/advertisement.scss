@@ -37,11 +37,15 @@
 
   .advertisement__wrapper {
     padding: 22px 0 20px 0;
+    max-width: 280px;
   }
 
   .advertisement__text {
     margin-bottom: 14px;
 
     font-family: "Segoe UI";
+  }
+  .advertisement__image-link img {
+    width: 100%;
   }
  }

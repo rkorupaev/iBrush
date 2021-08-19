@@ -40,3 +40,33 @@
     opacity: 0.4;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .similar-posts {
+    margin-top: 36px;
+    margin-bottom: 68px;
+  }
+
+  .similar-posts__title {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .similar-posts__slider-wrapper {
+    min-height: 390px;
+  }
+
+  .similar-posts__pagination {
+    display: block;
+    bottom: 0 !important;
+  }
+
+  .similar-posts__slide-image {
+    margin-bottom: 11px;
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet-active {
+    transform: scale(1.5);
+  }
+}

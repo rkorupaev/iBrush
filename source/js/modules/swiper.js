@@ -5,7 +5,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 export const swiper = (element) => {
   return new SwiperCore(element, {
-    direction: 'horizontal',
+    direction: `horizontal`,
     loop: true,
 
     slidesPerView: 3,
@@ -15,7 +15,7 @@ export const swiper = (element) => {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 24,
+        spaceBetween: 20,
       },
       // when window width is >= 640px
       768: {
@@ -25,7 +25,7 @@ export const swiper = (element) => {
     },
 
     pagination: {
-      el: '.swiper-pagination',
+      el: `.swiper-pagination`,
       clickable: true,
     },
   });

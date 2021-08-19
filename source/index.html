@@ -44,9 +44,12 @@
       <div class="advertisement__wrapper">
         <h2 class="advertisement__title visually-hidden">Рекламный блок</h2>
         <p class="advertisement__text">Реклама на <a class="advertisement__link" href="#blabla.com">blabla.com</a></p>
-        <a class="advertisement__image-link" href="#blabla.com"><img src="./img/banner-desktop.png"
-                                                                     alt="advertisement photo" width="610"
-                                                                     height="200"></a>
+        <a class="advertisement__image-link" href="#blabla.com">
+          <picture>
+            <source srcset="./img/banner-mobile.png" media="(max-width: 767px)">
+            <img src="./img/banner-desktop.png" alt="advertisement photo" width="610" height="200">
+          </picture>
+        </a>
       </div>
     </section>
     <section class="main-body__conclusion conclusion container">

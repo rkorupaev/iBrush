@@ -1201,6 +1201,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./js/modules/choivesConfig.js":
+/*!*************************************!*\
+  !*** ./js/modules/choivesConfig.js ***!
+  \*************************************/
+/*! exports provided: choicesConfig */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"choicesConfig\", function() { return choicesConfig; });\n/* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! choices.js */ \"../node_modules/choices.js/public/assets/scripts/choices.js\");\n/* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(choices_js__WEBPACK_IMPORTED_MODULE_0__);\n\nvar choicesConfig = function choicesConfig() {\n  var element = document.querySelector(\".form__select\"); // eslint-disable-next-line no-unused-vars\n\n  var choices = new choices_js__WEBPACK_IMPORTED_MODULE_0___default.a(element, {\n    placeholder: false,\n    itemSelectText: \"\",\n    searchEnabled: false,\n    classNames: {\n      containerOuter: \"choices input--top-block form__select\",\n      containerInner: \"choices__inner form__select-inner\",\n      item: \"choices__item form__select-item\"\n    }\n  });\n};\n\n//# sourceURL=webpack:///./js/modules/choivesConfig.js?");
+
+/***/ }),
+
+/***/ "./js/modules/fixLabel.js":
+/*!********************************!*\
+  !*** ./js/modules/fixLabel.js ***!
+  \********************************/
+/*! exports provided: fixLabel */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"fixLabel\", function() { return fixLabel; });\n// input label on top\nvar fixLabel = function fixLabel() {\n  var inputWrapper = document.querySelector(\".form__top-wrapper\");\n  inputWrapper.addEventListener(\"input\", function (evt) {\n    if (evt.target.value.length !== 0) {\n      evt.target.previousElementSibling.classList.add(\"form__input-label--fixed-on-top\");\n    } else {\n      evt.target.previousElementSibling.classList.remove(\"form__input-label--fixed-on-top\");\n    }\n  });\n};\n\n//# sourceURL=webpack:///./js/modules/fixLabel.js?");
+
+/***/ }),
+
 /***/ "./js/modules/index.js":
 /*!*****************************!*\
   !*** ./js/modules/index.js ***!
@@ -1209,7 +1233,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./swiper */ \"./js/modules/swiper.js\");\n/* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! choices.js */ \"../node_modules/choices.js/public/assets/scripts/choices.js\");\n/* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(choices_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _changeBlockPosition__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./changeBlockPosition */ \"./js/modules/changeBlockPosition.js\");\n\nObject(_swiper__WEBPACK_IMPORTED_MODULE_0__[\"swiper\"])(\".swiper-container\");\n\n\n\nvar choicesConfig = function choicesConfig() {\n  var element = document.querySelector(\".form__select\"); // eslint-disable-next-line no-unused-vars\n\n  var choices = new choices_js__WEBPACK_IMPORTED_MODULE_1___default.a(element, {\n    placeholder: false,\n    itemSelectText: \"\",\n    searchEnabled: false,\n    classNames: {\n      containerOuter: \"choices input--top-block form__select\",\n      containerInner: \"choices__inner form__select-inner\",\n      item: \"choices__item form__select-item\"\n    }\n  });\n};\n\nchoicesConfig();\n\nwindow.onload = function () {\n  Object(_changeBlockPosition__WEBPACK_IMPORTED_MODULE_2__[\"moveIntroText\"])();\n};\n\nwindow.addEventListener(\"resize\", _changeBlockPosition__WEBPACK_IMPORTED_MODULE_2__[\"moveIntroText\"]);\n\n//# sourceURL=webpack:///./js/modules/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./swiper */ \"./js/modules/swiper.js\");\n/* harmony import */ var _changeBlockPosition__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./changeBlockPosition */ \"./js/modules/changeBlockPosition.js\");\n/* harmony import */ var _fixLabel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fixLabel */ \"./js/modules/fixLabel.js\");\n/* harmony import */ var _choivesConfig__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./choivesConfig */ \"./js/modules/choivesConfig.js\");\n\n\n\n\n\nwindow.onload = function () {\n  Object(_changeBlockPosition__WEBPACK_IMPORTED_MODULE_1__[\"moveIntroText\"])();\n};\n\nwindow.addEventListener(\"resize\", _changeBlockPosition__WEBPACK_IMPORTED_MODULE_1__[\"moveIntroText\"]);\nObject(_fixLabel__WEBPACK_IMPORTED_MODULE_2__[\"fixLabel\"])();\nObject(_choivesConfig__WEBPACK_IMPORTED_MODULE_3__[\"choicesConfig\"])();\nObject(_swiper__WEBPACK_IMPORTED_MODULE_0__[\"swiper\"])(\".swiper-container\");\n\n//# sourceURL=webpack:///./js/modules/index.js?");
 
 /***/ }),
 

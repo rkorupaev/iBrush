@@ -3,11 +3,48 @@
   flex-direction: column;
 }
 
+.form__input-wrapper {
+  display: flex;
+  position: relative;
+  margin-right: 30px;
+  transition-duration: 0.3s;
+
+  &:hover .form__input-label,
+  &:focus-within  .form__input-label {
+    top: 8px;
+  }
+}
+
+.form__input-label {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  font-family: $arialMt;
+  font-size: 14px;
+  line-height: 14px;
+  color: $input-text;
+  transition-duration: 0.3s;
+
+  &--fixed-on-top {
+    top: 8px;
+  }
+}
+
+.form__input-name,
+.form__input-email {
+  padding-top: 11px;
+
+  &:focus .form__input-label{
+    top: 8px;
+  }
+}
+
 .form__select {
   width: 226px;
   padding: 0;
   border-radius: 6px;
   border: 2px solid $input-border;
+  transition-duration: 0.3s;
 
   &:hover,
   &:focus {
@@ -23,43 +60,15 @@
   padding-top: 7.5px;
   align-items: center;
   background-color: $white;
+  border-radius: 4px;
 }
 
-.choices__list {
-  box-sizing: border-box;
-}
-
-.choices__list--dropdown .choices__item {
-  padding: 10px 11px;
-  padding-left: 25px;
-  color: $main-black;
-}
 
 .form__select-item {
   position: relative;
   width: 184px;
-  color: $input-text;
+  color: $main-black;
   opacity: 1;
-}
-
-.choices__list--dropdown .is-active {
-  margin-top: 10px;
-  border: none;
-}
-
-.choices__list--dropdown .choices__item--selectable.is-highlighted {
-  background-color: $side-background;
-
-  &:before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 7px;
-    height: 100%;
-    background-color: $blue;
-    top: 0;
-    left: 0;
-  }
 }
 
 .form__text-area {
@@ -94,6 +103,52 @@
   }
 }
 
+.choices__list {
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.choices__list--single {
+  margin-top: 0;
+}
+
+.choices__placeholder {
+  color: $input-text;
+}
+
+.choices__list--dropdown .choices__item {
+  padding: 10px 11px;
+  padding-left: 25px;
+  color: $main-black;
+}
+
+
+.choices__list--dropdown .is-active {
+  margin-top: 10px;
+  border: none;
+}
+
+.choices__list--dropdown .choices__item:first-child {
+  display: none;
+}
+
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: $side-background;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 100%;
+    background-color: $blue;
+    top: 0;
+    left: 0;
+  }
+}
+
+
 
 @media (max-width: $mobile-width) {
   .form__top-wrapper {
@@ -101,8 +156,17 @@
     margin-bottom: 10px;
   }
 
+  .form__input-wrapper {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
   .form__select {
     width: 100%;
+  }
+
+  .form__select-item {
+    width: 238px;
   }
 
   .form__text-area {

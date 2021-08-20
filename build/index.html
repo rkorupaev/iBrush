@@ -27,7 +27,7 @@
         <img class="intro-block__image" src="./img/books.png" alt="js books" width="738" height="300">
       </div>
       <p class="intro-block__text">Можно выделить три основных направления для прогресса JavaScript</p>
-     </section>
+    </section>
     <section class="main-body__quote-block quote-block container">
       <h2 class="quote-block__title">Серверный JavaScript</h2>
       <div class="quote-block__text-wrapper">
@@ -76,8 +76,14 @@
         <h2 class="rate-block__sub-title">Добавить комментарий к книге</h2>
         <form class="rate-block__form form">
           <div class="form__top-wrapper">
-            <input class="form__input-name input input--top-block" type="text" placeholder="Имя">
-            <input class="form__input-email input input--top-block" type="email" placeholder="E-mail">
+            <div class="form__input-wrapper">
+              <label for="name" class="form__input-label">Имя</label>
+              <input class="form__input-name input input--top-block" type="text" id="name">
+            </div>
+            <div class="form__input-wrapper">
+              <label for="email" class="form__input-label">E-mail</label>
+              <input class="form__input-name input input--top-block" type="email" id="email">
+            </div>
             <select class="form__select input input--top-block">
               <option value="">Выберите книгу</option>
               <option value="ninja">JavaScript ниндзя</option>
@@ -86,7 +92,7 @@
               <option value="expressional">Выразительный JavaScript</option>
             </select>
           </div>
-          <textarea class="form__text-area input" id="review" cols="30" rows="10">Ваш отзыв</textarea>
+          <textarea class="form__text-area input" id="review" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
           <button class="form__button" type="submit">Отправить</button>
         </form>
       </div>

@@ -10,3 +10,5 @@ export const moveIntroText = () => {
     introImageContainer.after(introText);
   }
 };
+
+

@@ -2,7 +2,8 @@
   background-color: $white;
   border: 2px solid $input-border;
   border-radius: 6px;
-  color: $input-text;
+  color: $main-black;
+  transition-duration: 0.3s;
 
   &:hover,
   &:focus {
@@ -10,16 +11,16 @@
   }
 }
 
+.input::placeholder {
+  color: $input-text;
+}
+
 .input--top-block {
   box-sizing: border-box;
   min-height: 50px;
   width: 226px;
-  margin-right: 30px;
-  padding: 0 19px;
 
-  &:last-child {
-    margin-right: 0;
-  }
+  padding: 0 19px;
 }
 
 @media (max-width: $mobile-width) {
